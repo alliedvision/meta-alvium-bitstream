@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<Project Version="1" Minor="7" DIGEST="">
+	<TOOL_VERSION Version="2022.2"/>
+	<MODE Name="Post-Synthesis"/>
+	<SYSTEMINFO BOARD="xilinx.com:zcu106:2.6" PART="xczu7ev-ffvc1156-2-e" ARCH="zynquplus" PACKAGE="ffvc1156" DEVICE="xczu7ev" SPEED="-2"/>
+	<PART Name="xczu7ev-ffvc1156-2-e">
+		<SSIT IS_SSIT="0"/>
+		<NUM_OF_SLRS Value="1"/>
+	</PART>
+	<HIERARCHY Name="design_1_wrapper"/>
+	<File Type="HW_HANDOFF" Name="design_1.hwh" src_db="design_1.hwdef" DESIGN_HIERARCHY="design_1_i" BD_TYPE="DEFAULT_BD">
+	</File>
+	<File Type="BDA" Name="design_1.bda" src_db="design_1.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT" Name="psu_init.c" src_db="design_1_zynq_ultra_ps_e_0_0.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT" Name="psu_init.h" src_db="design_1_zynq_ultra_ps_e_0_0.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT_GPL" Name="psu_init_gpl.c" src_db="design_1_zynq_ultra_ps_e_0_0.hwdef">
+	</File>
+	<File Type="PS_FSBL_INIT_GPL" Name="psu_init_gpl.h" src_db="design_1_zynq_ultra_ps_e_0_0.hwdef">
+	</File>
+	<File Type="PS_INIT_HELP" Name="psu_init.html" src_db="design_1_zynq_ultra_ps_e_0_0.hwdef">
+	</File>
+	<File Type="PS_XMD_INIT" Name="psu_init.tcl" src_db="design_1_zynq_ultra_ps_e_0_0.hwdef">
+	</File>
+	<File Type="HW_HANDOFF" Name="design_1_mipi_csi2_rx_subsyst_0_0.hwh" src_db="design_1_mipi_csi2_rx_subsyst_0_0.hwdef" DESIGN_HIERARCHY="design_1_mipi_csi2_rx_subsyst_0_0" BD_TYPE="SCOPED_BD">
+	</File>
+	<File Type="HW_HANDOFF" Name="design_1_mipi_csi2_rx_subsyst_0_1.hwh" src_db="design_1_mipi_csi2_rx_subsyst_0_1.hwdef" DESIGN_HIERARCHY="design_1_mipi_csi2_rx_subsyst_0_1" BD_TYPE="SCOPED_BD">
+	</File>
+	<File Type="HW_HANDOFF" Name="design_1_mipi_csi2_rx_subsyst_2.hwh" src_db="design_1_mipi_csi2_rx_subsyst_2.hwdef" DESIGN_HIERARCHY="design_1_mipi_csi2_rx_subsyst_2" BD_TYPE="SCOPED_BD">
+	</File>
+	<File Type="HW_HANDOFF" Name="design_1_mipi_csi2_rx_subsyst_1.hwh" src_db="design_1_mipi_csi2_rx_subsyst_1.hwdef" DESIGN_HIERARCHY="design_1_mipi_csi2_rx_subsyst_1" BD_TYPE="SCOPED_BD">
+	</File>
+	<File Type="BIT" Name="alvium_fmc_zcu106_yuv.bit" src_db="temp.hdf">
+	</File>
+	<File Type="AIE_PRIMITIVE" Name="aie_primitive.json" src_db="temp.hdf">
+	</File>
+	<USEDRESOURCES/>
+</Project>
+
