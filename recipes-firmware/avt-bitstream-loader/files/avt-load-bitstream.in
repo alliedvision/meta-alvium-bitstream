@@ -6,7 +6,7 @@ if [ "$#" -ne 1 ] ; then
   exit 1
 fi
 
-config_name="alvium-fmc-zcu106-$1"
+config_name="@@AVT_BITSTREAM_PREFIX@@-$1"
 bitstream_dir="/lib/firmware/xilinx/$config_name"
 
 if ! [ -e "$bitstream_dir" ]; then
@@ -14,12 +14,17 @@ if ! [ -e "$bitstream_dir" ]; then
  	exit 1
 fi
 
-
 if [ -e "/configfs/device-tree/overlays/Full" ]; then
 	fpgautil -R -n Full
 fi
+
+
+modprobe -rq avt_csi2-3
 
 bitstream_file="$bitstream_dir/$config_name.bit.bin"
 overlay_file="$bitstream_dir/$config_name.dtbo"
 
 fpgautil -b $bitstream_file -o $overlay_file -n Full -f Full
+modprobe -q avt_csi2-3
+
+fixup_media_pipeline
