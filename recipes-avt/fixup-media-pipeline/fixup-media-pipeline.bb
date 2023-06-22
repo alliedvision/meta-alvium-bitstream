@@ -2,9 +2,11 @@ SUMMARY = "Media pipeline fix tool"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
-inherit cmake
+SRC_URI += "file://fixup-media-pipeline.cpp;subdir=${S}"
 
-SRC_URI += "file://fixup-media-pipeline.tgz;subdir=${S}"
+do_compile() {
+	${CXX} ${CXXFLAGS} ${LDFLAGS} -std=c++17 -o ${B}/fixup_media_pipeline ${S}/fixup-media-pipeline.cpp
+}
 
 do_install() {
 	install -d ${D}${bindir}
