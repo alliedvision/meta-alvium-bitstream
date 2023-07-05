@@ -3,7 +3,7 @@ CORE_IMAGE_EXTRA_INSTALL:append = " \
   avt-bitstream-loader \
   "
 
-CORE_IMAGE_EXTRA_INSTALL:zcu106:append = " \
+CORE_IMAGE_EXTRA_INSTALL:append:zcu106 = " \
   alvium-fmc-zcu106-rgb \
   alvium-fmc-zcu106-raw8 \
   alvium-fmc-zcu106-yuv \
