@@ -503,26 +503,3 @@ mipi_csi_portscamera_3_mipi_csi2_rx_subsyst_0: ports {
 };
 
 
-/ {
-  fragment@3 {
-    target-path="/";
-    overlay3: __overlay__ {
-      avt_csitl {
-        supported_data_types = [ 31 ];
-        min_announced_frames = <3>;
- 
-        ipu {
-          y_min = <1>;
-          y_inc = <1>;
-          y_max = <4096>;
-          x_min = <4>;
-          x_inc = <4>;
-          x_max = <8192>;
-        };
-      };
-    };      
-  };
- 
-
-};
-

@@ -471,7 +471,7 @@ mipi_csi_portscamera_3_mipi_csi2_rx_subsyst_0: ports {
         remote-endpoint = <&mipi_csi_incamera_3_mipi_csi2_rx_subsyst>;
         data-lanes = <1 2 3 4>;
         clock-lanes = <0>;
-        link-frequencies = /bits/ 64 <750000000>;
+        link-frequencies = /bits/ 64 <450000000>;
       };
     };
   };
@@ -500,29 +500,5 @@ mipi_csi_portscamera_3_mipi_csi2_rx_subsyst_0: ports {
 
 	};
     };
-};
-
-
-/ {
-  fragment@3 {
-    target-path="/";
-    overlay3: __overlay__ {
-      avt_csitl {
-        supported_data_types = [ 31 ];
-        min_announced_frames = <3>;
- 
-        ipu {
-          y_min = <1>;
-          y_inc = <1>;
-          y_max = <4096>;
-          x_min = <4>;
-          x_inc = <4>;
-          x_max = <8192>;
-        };
-      };
-    };      
-  };
- 
-
 };
 
