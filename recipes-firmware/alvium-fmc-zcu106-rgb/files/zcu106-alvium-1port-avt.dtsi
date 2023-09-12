@@ -471,7 +471,7 @@ mipi_csi_portscamera_3_mipi_csi2_rx_subsyst_0: ports {
         remote-endpoint = <&mipi_csi_incamera_3_mipi_csi2_rx_subsyst>;
         data-lanes = <1 2 3 4>;
         clock-lanes = <0>;
-        link-frequencies = /bits/ 64 <450000000>;
+        link-frequencies = /bits/ 64 <750000000>;
       };
     };
   };
