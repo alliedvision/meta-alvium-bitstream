@@ -202,7 +202,7 @@ mipi_csi_portscamera_1_mipi_csi2_rx_subsyst_0: ports {
               avt-ignore-rgb444_avail;
               avt-ignore-raw6_avail;
               avt-ignore-raw7_avail;
-              x_avt-ignore-raw8_avail;
+              avt-ignore-raw8_avail;
               avt-ignore-raw10_avail;
               avt-ignore-raw12_avail;
               avt-ignore-raw14_avail;
