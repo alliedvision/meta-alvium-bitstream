@@ -185,7 +185,8 @@ mipi_csi_portscamera_1_mipi_csi2_rx_subsyst_0: ports {
               mipi_csi;
               status = "okay";
 
-              streamon_delay = <100>;
+              //streamon_delay = <100>;
+              phy_reset_on_start;
               x_force_reset_on_init;
 
               avt-ignore-yuv420_8_leg_avail;
@@ -234,7 +235,8 @@ mipi_csi_portscamera_1_mipi_csi2_rx_subsyst_0: ports {
             mipi_csi;
             status = "okay";
 
-            streamon_delay = <100>;
+            //streamon_delay = <100>;
+            phy_reset_on_start;
             x_force_reset_on_init;
 
             avt-ignore-yuv420_8_leg_avail;
